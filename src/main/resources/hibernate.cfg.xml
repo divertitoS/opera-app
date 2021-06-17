@@ -1,0 +1,19 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="connection.url">jdbc:mysql://localhost/opera_app?serverTimezone=UTC</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">22042361dS!</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+
+        <mapping class="com.dev.opera.model.Performance"/>
+        <mapping class="com.dev.opera.model.PerformanceSession"/>
+        <mapping class="com.dev.opera.model.Stage"/>
+        <mapping class="com.dev.opera.model.User"/>
+        <mapping class="com.dev.opera.model.Ticket"/>
+        <mapping class="com.dev.opera.model.ShoppingCart"/>
+        <mapping class="com.dev.opera.model.Order"/>
+    </session-factory>
+</hibernate-configuration>
